@@ -1,0 +1,6 @@
+@StroyBuildings.Api_HostAddress = http://localhost:5007
+
+GET {{StroyBuildings.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
