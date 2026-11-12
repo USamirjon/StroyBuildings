@@ -52,6 +52,57 @@ namespace StroyBuildings.Api.Infrastructure.Persistence.Migrations
                         .IsUnique();
 
                     b.ToTable("ServiceCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("6b036b85-ab8e-4876-897b-2cda7ae32fb0"),
+                            Description = "Установка и ремонт смесителей, труб, унитазов, ванн и бойлеров.",
+                            Name = "Сантехника",
+                            Slug = "santehnika"
+                        },
+                        new
+                        {
+                            Id = new Guid("6f6a15cf-dc58-4ffd-9e9b-619bf1445bad"),
+                            Description = "Монтаж проводки, розеток, выключателей, освещения и электрощитов.",
+                            Name = "Электрика",
+                            Slug = "elektrika"
+                        },
+                        new
+                        {
+                            Id = new Guid("bb6b1e2a-5ae8-4082-b814-bfbb333bab74"),
+                            Description = "Штукатурка, покраска, поклейка обоев, укладка плитки и ламината.",
+                            Name = "Отделка",
+                            Slug = "otdelka"
+                        },
+                        new
+                        {
+                            Id = new Guid("ff75c14b-5dda-4efe-99bf-9c2d41aa56ae"),
+                            Description = "Сборка и установка шкафов, кроватей, кухонь и другой мебели.",
+                            Name = "Сборка мебели",
+                            Slug = "sborka-mebeli"
+                        },
+                        new
+                        {
+                            Id = new Guid("bef1bccc-811f-47bf-b698-0c990a2fb298"),
+                            Description = "Установка, регулировка и ремонт окон, межкомнатных и входных дверей.",
+                            Name = "Окна и двери",
+                            Slug = "okna-i-dveri"
+                        },
+                        new
+                        {
+                            Id = new Guid("02fc083e-10cd-475e-8f7a-ff883cf742bb"),
+                            Description = "Уборка помещений после строительных и ремонтных работ.",
+                            Name = "Клининг после ремонта",
+                            Slug = "klining-posle-remonta"
+                        },
+                        new
+                        {
+                            Id = new Guid("4846f7d9-6934-4204-858a-e51b7dd487e8"),
+                            Description = "Виды услуг которые не вошли в основные категории",
+                            Name = "Другое",
+                            Slug = "drugoe"
+                        });
                 });
 #pragma warning restore 612, 618
         }
